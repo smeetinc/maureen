@@ -57,56 +57,68 @@
   </head>
 
   <body>
-    <!-- ======= Mobile nav toggle button ======= -->
+    <!--Header-->
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-light fixed-top bg-dark bg-opacity-50"
+        id="navbar-active"
+      >
+        <div class="container-xxl">
+          <a href="#hero" class="navbar-brand">
+            <p class="fw-bold text-danger-emphasis">Uchenna Maureen</p>
+          </a>
+          <!----Mobile nav-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!---Navbar links-->
+          <div
+            id="main-nav"
+            class="collapse navbar-collapse justify-content-end align-center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
 
-    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
-      <nav id="navbar" class="navbar nav-menu">
-        <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active"
-              ><i class="bx bx-home"></i> <span>Home</span></a
-            >
-          </li>
-          <li>
-            <a href="#about" class="nav-link scrollto"
-              ><i class="bx bx-user"></i> <span>About</span></a
-            >
-          </li>
-          <li>
-            <a href="#skills" class="nav-link scrollto"
-              ><i class="fas fa-briefcase"></i> <span>Skills</span></a
-            >
-          </li>
-
-          <li>
-            <a href="#portfolio" class="nav-link scrollto"
-              ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
-            >
-          </li>
-
-          <li>
-            <a href="#contact" class="nav-link scrollto"
-              ><i class="bx bx-envelope"></i> <span>Contact</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="assets/resume/Uchenna_Maureen_Anyanwu_CV_2023.pdf"
-              class="nav-link"
-              download="Uchenna Maureen's CV"
-              ><i class="fas fa-file"></i><span>Resume</span></a
-            >
-          </li>
-        </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="assets/resume/Uchenna_Maureen_Anyanwu_CV_2023.pdf"
+                  class="nav-link"
+                  download="Uchenna Maureen's CV"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <!-- .nav-menu -->
     </header>
+
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
+    <section id="hero" class="d-flex flex-column justify-content-center pt-8">
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <h1>Uchenna Maureen</h1>
         <p>
@@ -297,16 +309,11 @@
       <!-- End Skills Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="bg-danger text-light">
-        <div class="container" data-aos="fade-up">
+      <section id="project" class="bg-danger text-light">
+        <div class="container-fluid" data-aos="fade-up">
           <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <h2>Project</h2>
+            <p>Take a glimpse at some of my on-going and past projects</p>
           </div>
           <div class="row">
             <div
@@ -401,19 +408,19 @@
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>Poland</p>
+                  <p>Adama Mickiewicza 64, 71-101 Szczecin, Poland,</p>
                 </div>
 
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@maureen.com</p>
+                  <p>maureenanyanwu101@gmail.com</p>
                 </div>
 
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+234h-5566-555</p>
+                  <p>+48690310164</p>
                 </div>
               </div>
             </div>
@@ -494,11 +501,13 @@
             </a>
             <p class="h5">Contact</p>
             <p>
-              <span class="fw-bold">Address: </span>Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit.<br />
-              Eaque pariatur, qui quia quas ad laboriosam.
+              <span class="fw-bold">Address: </span>Adama Mickiewicza 64, 71-101
+              Szczecin, Poland.
             </p>
-            <p><span class="fw-bold">Phone: </span> +xxx - xxx - xxx/p></p>
+            <p>
+              <span class="fw-bold">Email: </span> maureenanyanwu101@gmail.com
+            </p>
+            <p><span class="fw-bold">Phone: </span> +48690310164</p>
             <p><span class="fw-bold">Operating Hours: </span> 24/7</p>
           </div>
         </div>
@@ -574,7 +583,6 @@
       </p>
     </footer>
 
-    <div id="preloader"></div>
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
